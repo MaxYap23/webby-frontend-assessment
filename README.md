@@ -13,7 +13,7 @@ npm run dev
 
 Public API Used:
 REST Countries API (https://restcountries.com)
-- Endpoint: https://restcountries.com/v3.1/all?fields=name,region,currencies,languages,flags
+- Endpoint: https://restcountries.com/v3.1/all?fields=name,region,currencies,languages
 - Used to fetch country data including name, region, currency, languages, and flags.
 - Client-side fetch with loading and error handling.
 
