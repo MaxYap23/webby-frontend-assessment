@@ -42,13 +42,27 @@ export default function TasksPage() {
           <Grid key = {task.id} style = {{ width: '100%', maxWidth: 400 }}>
             <Card>
               <CardContent>
-                <Typography variant="h6">{task.name}</Typography>
-                <Typography color="textSecondary">Type: {task.type}</Typography>
-                <Typography color="textSecondary">Status: {task.status}</Typography>
+                <Typography variant="h6">
+                  {task.name}
+                </Typography>
+
+                <Typography color="textSecondary">
+                  Type: {task.type}
+                </Typography>
+
+                <Typography color="textSecondary">
+                  Status: {task.status}
+                </Typography>
               </CardContent>
+
               <CardActions>
-                <Button size="small" onClick={() => setEditingID(task.id)}>Edit</Button>
-                <Button size="small" color="error" onClick={() => removeTask(task.id)}>Delete</Button>
+                <Button size="small" onClick={() => setEditingID(task.id)}>
+                  Edit
+                </Button>
+
+                <Button size="small" color="error" onClick={() => removeTask(task.id)}>
+                  Delete
+                </Button>
               </CardActions>
             </Card>
           </Grid>

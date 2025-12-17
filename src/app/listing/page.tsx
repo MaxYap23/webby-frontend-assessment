@@ -36,10 +36,21 @@ export default function ListingPage() {
             <Grid key={index} style={{ width: '100%', maxWidth: 400 }}>
               <Card>
                 <CardContent>
-                  <Typography variant="h6">{country.name.common}</Typography>
-                  <Typography variant="body2" color="textSecondary">Region: {country.region}</Typography>
-                  <Typography variant="body2" color="textSecondary">Currency: {currencyList}</Typography>
-                  <Typography variant="body2" color="textSecondary">Languages: {languageList}</Typography>
+                  <Typography variant="h6">
+                    {country.name.common}
+                  </Typography>
+
+                  <Typography variant="body2" color="textSecondary">
+                    Region: {country.region}
+                  </Typography>
+
+                  <Typography variant="body2" color="textSecondary">
+                    Currency: {currencyList}
+                  </Typography>
+
+                  <Typography variant="body2" color="textSecondary">
+                    Languages: {languageList}
+                  </Typography>
                 </CardContent>
               </Card>
             </Grid>
